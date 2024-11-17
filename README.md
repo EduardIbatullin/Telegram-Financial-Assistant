@@ -36,7 +36,7 @@ project_folder/
 ├── exchange.py       # Модуль для работы с курсами валют
 ├── tips.py           # Модуль для предоставления советов по экономии
 ├── finances.py       # Модуль для работы с личными финансами
-├── hw_TG06.py           # Главный файл для запуска бота
+├── main.py           # Главный файл для запуска бота
 ├── requirements.txt  # Список зависимостей Python
 └── users.db          # База данных SQLite для хранения информации о пользователях
 ```
@@ -50,15 +50,15 @@ project_folder/
 - **exchange.py:** Обработка получения курсов валют с внешнего API и отправка пользователю.
 - **tips.py:** Предоставление случайного совета по экономии пользователю.
 - **finances.py:** Управление личными финансами пользователя через FSM (Finite State Machine).
-- **hw_TG06.py:** Главный файл для запуска и настройки бота.
+- **main.py:** Главный файл для запуска и настройки бота.
 
 ## Установка и настройка
 
 ### 1. Клонирование репозитория:
 
 ```bash
-git clone https://github.com/EduardIbatullin/Lesson_TG06
-cd Lesson_TG06
+git clone https://github.com/EduardIbatullin/Telegram-Financial-Assistant.git
+cd Telegram-Financial-Assistant
 ```
 
 ### 2. Установка зависимостей:
@@ -76,14 +76,13 @@ pip install -r requirements.txt
 ```
 TELEGRAM_API_TOKEN=your_telegram_bot_token
 EXCHANGE_API_KEY=your_exchange_rate_api_key
-WEATHER_API_KEY=your_weather_api_key
 X_RAPID_API_KEY=your_rapid_api_key
 ```
 
 ### 4. Запуск проекта:
 
 ```bash
-python hw_TG06.py
+python main.py
 ```
 
 ## Используемые технологии
